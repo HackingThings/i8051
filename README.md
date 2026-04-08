@@ -4,6 +4,11 @@ This is a disassembler for a variety of _MCS-51_-based chips. It's fairly high-e
 
 ![Example disassembly](img/lolcode.png)
 
+## Binary Ninja Compatibility
+
+This plugin now targets **Binary Ninja 5.2 and newer**.
+
+
 You _will_ need to write your own `BinaryView`, like the one in [devices/surface_ec.py](devices/surface_ec.py). It will need to do 3 things.
 
 1. Act as a loader from whatever firmware update you're carving code from, and hopefully add in any missing ROM portions from your specific target device.
